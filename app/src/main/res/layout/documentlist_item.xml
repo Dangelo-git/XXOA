@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SettingItemLayoutStyle">
+
+        <RelativeLayout
+            android:id="@+id/framelist_sub_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/list_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/list_dot"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/framelist_sub_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyTextStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:text="foodname"
+                android:layout_toRightOf="@+id/list_dot"
+                android:layout_toLeftOf="@+id/framelist_sub_item_img"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bigbigTextSize"
+                android:gravity="left"/>
+
+                <ImageView
+                    android:id="@+id/framelist_sub_item_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/login_location_arr_img"
+                    android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/framelist_sub_item_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/framelist_sub_item_layout"
+            android:background="@color/schadule_calender_bgcolor"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

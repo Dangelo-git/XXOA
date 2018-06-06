@@ -1,0 +1,61 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="normalTextSize">14dp</dimen>
+    <dimen name="bigTextSize">16dp</dimen>
+    <dimen name="bigbigTextSize">16dp</dimen>
+    <dimen name="largeTextSize">20dp</dimen>
+    <dimen name="smallTextSize">10dp</dimen>
+    <dimen name="midsmallTextSize">12dp</dimen>
+    <dimen name="middleTextSize">14sp</dimen>
+    <dimen name="meet_second_title_padding">7dp</dimen>
+
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+
+    <dimen name="calender_text_today">16px</dimen>
+    <dimen name="calender_text_month">19px</dimen>
+    <dimen name="calender_dataly_wide">200px</dimen>
+    <dimen name="calender_dataly_height">260px</dimen>
+    <dimen name="calender_string_ts">50px</dimen>
+
+    <dimen name="setting_item_height">55dp</dimen>
+
+    <dimen name="activity_icon_height">170dp</dimen>
+    <dimen name="activity_icon_wideth">200dp</dimen>
+    <dimen name="activity_submit_height">60dp</dimen>
+    <dimen name="activity_icon_margintop">70dp</dimen>
+    <dimen name="activity_submit_margintop">30dp</dimen>
+    <dimen name="fgdia_contactbtn_marginleft">30dp</dimen>
+    <dimen name="fragment_setting_item_height">75dp</dimen>
+    <dimen name="activity_register_height">50dp</dimen>
+    <dimen name="activity_addmeeting_height">50dp</dimen>
+    <dimen name="activity_addcalender_height">150dp</dimen>
+    <dimen name="activity_addmeeting_picker_height">70dp</dimen>
+    <dimen name="activity_addmeeting_picker_weight">50dp</dimen>
+    <dimen name="activity_addmeeting_text_wideth">70dp</dimen>
+
+    <dimen name="common_150">130dp</dimen>
+    <dimen name="common_20">15dp</dimen>
+    <dimen name="detail_tv_head_width">90dp</dimen>
+</resources>

@@ -1,0 +1,45 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:14:1-25:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:14:1-25:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:14:1-25:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:14:1-25:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:14:1-25:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:14:1-25:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:14:1-25:12
+	package
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:14:11-52
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:14:1-25:12
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:14:1-25:12
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:15:11-69
+application
+ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:17:5-23:19
+	android:supportsRtl
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:20:9-35
+	android:label
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:19:9-41
+	android:allowBackup
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml:18:9-35
+uses-sdk
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/navigationtabstrip/src/main/AndroidManifest.xml

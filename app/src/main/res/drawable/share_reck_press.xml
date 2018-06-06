@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:shape="rectangle"
+  ><!-- android:shape="" 表示是圆角矩形还是椭圆等等 -->
+  	<solid android:color="@color/activity_login_toggle_on"/> <!-- 背景颜色 -->
+  	
+
+            
+     <stroke android:width="1px" android:color="@color/activity_login_toggle_on"/> <!-- 图片边框属性 -->
+      <corners android:radius="0dp" /> <!-- 圆角的程度 -->
+     
+</shape>
+

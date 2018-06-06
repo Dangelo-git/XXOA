@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="title_bar_layout" type="id"/>
+    <item name="bottom_title_layout" type="id"/>
+    <item name="selected_view" type="id"/>
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+    <item name="mainLayoutid" type="id"></item>
+    <item name="titleLayoutid" type="id"></item>
+    <item name="titlebelowlineid" type="id"></item>
+    <item name="caltitleLayoutid" type="id"></item>
+    <item name="calLayoutid" type="id"></item>
+    <item name="painting_title_id1" type="id"/>
+    <item name="painting_title_id2" type="id"/>
+    <item name="painting_title_id3" type="id"/>
+    <item name="painting_title_id4" type="id"/>
+    <item name="painting_title_id5" type="id"/>
+    <item name="painting_title_id6" type="id"/>
+    <item name="painting_title_id7" type="id"/>
+
+</resources>

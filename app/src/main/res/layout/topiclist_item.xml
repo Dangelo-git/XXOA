@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+              android:id="@+id/topic_item_ly"
+
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/activity_text_grey"/>
+    <LinearLayout
+
+        android:id="@+id/title_bg_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_addmeeting_height"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/MyTextStyle2"
+            android:layout_width="@dimen/activity_addmeeting_text_wideth"
+            android:layout_height="wrap_content"
+            android:text="议题标题"
+            />
+
+        <TextView
+            android:id="@+id/title_topic_content_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_addmeeting_height"
+            style="@style/MyTextStyle"
+            android:gravity="left|center_vertical"
+            android:text="默认"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/activity_text_grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_addmeeting_height"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MyTextStyle2"
+            android:layout_width="@dimen/activity_addmeeting_text_wideth"
+            android:layout_height="wrap_content"
+            android:text="汇报单位"
+            />
+        <!--<Spinner-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/addmeet_comperes_sp">-->
+        <!-- -->
+        <!--</Spinner>-->
+        <TextView
+            android:id="@+id/addmeet_topic_dept_sp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_addmeeting_height"
+            style="@style/MyTextStyle"
+            android:gravity="left|center_vertical"
+            android:text="默认"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/activity_text_grey"/>
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_addmeeting_height"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            style="@style/MyTextStyle2"
+            android:layout_width="@dimen/activity_addmeeting_text_wideth"
+            android:layout_height="wrap_content"
+            android:text="列席"
+            />
+
+        <TextView
+            android:id="@+id/addmeet_topic_seet_sp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_addmeeting_height"
+            style="@style/MyTextStyle"
+            android:gravity="left|center_vertical"
+            android:text="默认"/>
+    </LinearLayout>
+
+</LinearLayout>

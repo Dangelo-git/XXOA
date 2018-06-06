@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+               android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:background="@drawable/more_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/setting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="用户名："
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/setting_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="18555555555"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+            <RelativeLayout
+                android:id="@+id/setting_push_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@color/white"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/setting_push_arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/login_location_arr_img"/>
+
+                <TextView
+                    android:id="@+id/setting_push_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:text="推送设置"
+                    android:textColor="@color/waterfall_item_textcolor"
+                    android:textSize="@dimen/dp_18">
+                </TextView>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/news_list_dividercolor"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_download_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_weight="1"
+                android:background="@color/white"
+                style="@style/SettingItemLayoutStyle"
+                >
+
+                <ImageView
+                    android:id="@+id/setting_download_arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/login_location_arr_img"/>
+                <TextView
+                    android:id="@+id/setting_download_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/setting_download_arr"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:text="1"
+                    android:textColor="@color/news_list_dividercolor"
+                    android:textSize="@dimen/dp_18"/>
+                <TextView
+                    android:id="@+id/setting_download_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:text="下载内容"
+                    android:textColor="@color/waterfall_item_textcolor"
+                    android:textSize="@dimen/dp_18">
+                </TextView>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/news_list_dividercolor"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/setting_doc_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_weight="1"
+                android:background="@color/white"
+                style="@style/SettingItemLayoutStyle"
+                >
+
+                <ImageView
+                    android:id="@+id/setting_doc_arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/login_location_arr_img"/>
+                <TextView
+                    android:id="@+id/setting_doc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/setting_doc_arr"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:text="1"
+                    android:textColor="@color/news_list_dividercolor"
+                    android:textSize="@dimen/dp_18"/>
+                <TextView
+                    android:id="@+id/setting_doc_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:text="在线预览"
+                    android:textColor="@color/waterfall_item_textcolor"
+                    android:textSize="@dimen/dp_18">
+                </TextView>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/news_list_dividercolor"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/setting_clean_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_weight="1"
+                android:background="@color/white"
+                style="@style/SettingItemLayoutStyle"
+                >
+
+                <ImageView
+                    android:id="@+id/setting_clean_arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/login_location_arr_img"/>
+
+                <TextView
+                    android:id="@+id/setting_clean_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:text="清除缓存"
+                    android:textColor="@color/waterfall_item_textcolor"
+                    android:textSize="@dimen/dp_18">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/setting_clean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/setting_clean_arr"
+                    android:text="53.0M"
+                    android:textColor="@color/news_list_dividercolor"
+                    android:textSize="@dimen/dp_18">
+                </TextView>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/news_list_dividercolor"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_updatepwd_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/setting_item_height"
+                android:background="@color/white"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/setting_updatepwd_arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/login_location_arr_img"/>
+
+                <TextView
+                    android:id="@+id/setting_updatepwd_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:text="修改密码"
+                    android:textColor="@color/waterfall_item_textcolor"
+                    android:textSize="@dimen/dp_18">
+                </TextView>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/news_list_dividercolor"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_check_update_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_weight="1"
+                android:background="@color/white"
+                style="@style/SettingItemLayoutStyle"
+                >
+
+
+                <ImageView
+                    android:id="@+id/setting_check_update_arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:background="@drawable/login_location_arr_img"/>
+
+                <TextView
+                    android:id="@+id/setting_check_update_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:text="关于版本"
+                    android:textColor="@color/waterfall_item_textcolor"
+                    android:textSize="@dimen/dp_18">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/setting_check_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/setting_check_update_arr"
+                    android:text="已是最新版本"
+                    android:textColor="@color/news_list_dividercolor"
+                    android:textSize="@dimen/dp_18">
+                </TextView>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/news_list_dividercolor"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

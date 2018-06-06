@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:toggle="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/business_toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="会议标题"
+                    />
+
+                <TextView
+                    android:id="@+id/meet_title_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="会议室"
+
+                    />
+
+                <TextView
+                    android:id="@+id/meet_site_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="会议类型"
+                    />
+
+                <TextView
+                    android:id="@+id/meet_type_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="会议次数"
+                    />
+
+                <TextView
+                    android:id="@+id/meet_num_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间"
+                    />
+
+                <TextView
+                    android:id="@+id/meet_meetdate_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="结束时间"
+                    />
+
+                <TextView
+                    android:id="@+id/meet_enddate_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="出席人员"
+                    />
+
+                <TextView
+                    android:id="@+id/meet_attendone_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="主持人"
+                    />
+
+                <TextView
+                    android:id="@+id/meet_charge_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="联系人"
+                    />
+
+                <TextView
+                    android:id="@+id/meet_contacts_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话"
+                    />
+
+                <TextView
+                    android:id="@+id/meet_phone_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="会议状态"
+                    />
+
+                <TextView
+                    android:id="@+id/meet_status_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/meet_topic_liset"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/schadule_calender_bgcolor"
+                android:dividerHeight="1.0px"
+                android:drawSelectorOnTop="false"
+                android:fastScrollEnabled="true"
+                android:listSelector="#00000000">
+
+            </ListView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

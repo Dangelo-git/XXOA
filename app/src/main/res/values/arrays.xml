@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <array name="snooze_dismiss_descriptions">
+        <item>dismiss</item>
+        <item>@null</item>
+        <item>snooze</item>
+        <item>@null</item>
+    </array>
+    <array name="snooze_dismiss_direction_descriptions">
+        <item>right</item>
+        <item>@null</item>
+        <item>left</item>
+        <item>@null</item>
+    </array>
+    <string-array name="titles">
+        <item>消费明细</item>
+        <item>充值明细</item>
+    </string-array>
+    <string-array name="meet_titles">
+        <item>最新通知</item>
+        <item>历史通知</item>
+    </string-array>
+    <string-array name="know_titles">
+        <item>个人知识库</item>
+        <item>局知识库</item>
+        <item>科室知识库</item>
+    </string-array>
+
+    <string-array name="package_titles">
+        <item>待办</item>
+        <item>未完成</item>
+        <item>已完成</item>
+        <item>草稿箱</item>
+        <item>停办</item>
+    </string-array>
+    <string-array name="dial_contact_titles">
+        <item>拨号盘</item>
+        <item>联系人</item>
+    </string-array>
+
+
+</resources>

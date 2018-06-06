@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp">-->
+
+        <!--&lt;!&ndash;<CheckedTextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/package_name_tv"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="@drawable/grid_item_bg_selector"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:clickable="false"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="4G套餐"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textAlignment="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="14sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/package_name_tv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@drawable/grid_item_bg_selector"-->
+            <!--android:gravity="center"-->
+            <!--android:text="4G套餐" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/package_iv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:src="@drawable/icon"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+
+    <!--</FrameLayout>-->
+    <RelativeLayout
+
+        style="@style/SettingItemLayoutStyle"
+        android:id="@+id/telling_bg_layout"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/package_name_tv"
+            style="@style/MyTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="dfa"
+            android:singleLine="true"
+             />
+        <TextView
+            android:id="@+id/package_content_tv"
+            style="@style/MyTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/package_name_tv"
+            android:text="ddddd"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/line_gray"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+    </RelativeLayout>
+
+</LinearLayout>

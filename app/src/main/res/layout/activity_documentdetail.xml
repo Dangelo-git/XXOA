@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:toggle="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/white">
+
+    <include
+        android:id="@+id/business_toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/business_toolbar"
+        android:layout_above="@+id/document_btn"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="公文标题"
+                    />
+
+                <TextView
+                    android:id="@+id/meet_title_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="稿纸标题"
+
+                    />
+
+                <TextView
+                    android:id="@+id/docinfo_draftTitle_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="公文文号"
+                    />
+
+                <TextView
+                    android:id="@+id/docinfo_docno_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="处室名称"
+                    />
+
+                <TextView
+                    android:id="@+id/docinfo_princdeptname_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="拟稿人"
+                    />
+
+                <TextView
+                    android:id="@+id/docinfo_creatorName_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="电话"
+                    />
+
+                <TextView
+                    android:id="@+id/docinfo_telephone_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="密级"
+                    />
+
+                <TextView
+                    android:id="@+id/docinfo_secretLevel_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="登记时间"
+                    />
+
+                <TextView
+                    android:id="@+id/docinfo_createdate_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="抄送"
+                    />
+
+                <TextView
+                    android:id="@+id/docinfo_copysend_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/activity_text_grey">
+            </View>
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle2"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="主送"
+                    />
+
+                <TextView
+                    android:id="@+id/docinfo_mainsend_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    style="@style/MyTextStyle"
+                    android:gravity="left|center_vertical"
+                    android:text="默认"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/login_submit_bg"
+        android:id="@+id/document_btn"
+        android:text="下载公文"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normalTextSize"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+    <ProgressBar
+        android:id="@+id/firstBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/document_btn"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:maxHeight="48dp"
+        android:minHeight="48dp"
+        android:progress="0"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:visibility="invisible" />
+
+</RelativeLayout>

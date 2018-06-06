@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fragment_receive_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_no_package"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/dp_20"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_no_bundle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/schedule_loading"/>
+
+        <Button
+            android:id="@+id/btn_nopackage_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@drawable/back_btn_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_30"
+            style="?android:attr/borderlessButtonStyle"
+            android:gravity="center"
+            android:text="订购套餐"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normalTextSize" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_mypackage_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/fragment_receive_bg">
+
+        <com.gigamole.navigationtabstrip.NavigationTabStrip
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="top"
+            app:nts_active_color="@color/activity_tab_normal"
+            app:nts_color="@color/activity_tab_normal"
+            app:nts_corners_radius="1dp"
+            app:nts_inactive_color="@color/activity_send_title_tv"
+            app:nts_size="15dp"
+            app:nts_titles="@array/package_titles"
+            app:nts_weight="3dp"
+            android:id="@+id/nv_package_tab"
+            android:background="@color/white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/line_gray"
+            android:layout_marginBottom="@dimen/dp_10"
+            />
+        <com.dangelo.xxoa.ui.CustomViewPager
+            android:id="@+id/vp_package_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+</LinearLayout>

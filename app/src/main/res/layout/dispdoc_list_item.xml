@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangelo.xxoa.ui.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true"
+    >
+    <RelativeLayout
+        android:id="@+id/dispdoc_item_root"
+        android:layout_width="match_parent"
+        android:minHeight="55dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <!--活动列表item布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            >
+
+            <ImageView
+                android:id="@+id/dispdoc_item_image_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sysmsg_laba"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/dispdoc_item_title_tx"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="start|center_vertical"
+                    android:text="最新活动"
+                    android:textSize="@dimen/normalTextSize"
+                    android:textColor="@color/activity_send_title_tv"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/arrow_right"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/line_gray"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@color/slide_menu_btn"
+        android:text="删除"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+</com.dangelo.xxoa.ui.SwipeMenuLayout>

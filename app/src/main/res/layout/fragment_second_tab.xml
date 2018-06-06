@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:id="@+id/has_activity_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listview_below_bg"
+        android:visibility="gone">
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="@string/hello_blank_fragment"-->
+        <!--android:id="@+id/news_loading_tv"/>-->
+
+        <!--<ListView-->
+        <!--android:id="@+id/news_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/white"-->
+        <!--android:divider="@color/line_gray"-->
+        <!--android:dividerHeight="0.5dp"-->
+        <!--android:minHeight="75dp"-->
+        <!--android:listSelector="@android:color/transparent"-->
+        <!--/>-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sysmsg_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/back_gray"
+            android:visibility="visible" />
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/line"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1sp"-->
+        <!--android:background="@color/line_gray"-->
+        <!--android:orientation="horizontal"-->
+        <!--/>-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/no_activity_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/no_data_pic"/>
+
+    </LinearLayout>
+
+</LinearLayout>

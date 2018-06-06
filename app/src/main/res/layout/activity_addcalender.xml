@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:toggle="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/business_toolbar"
+        layout="@layout/toolbar"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/title_bg_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="日程主题"
+                    />
+
+                <EditText
+                    android:id="@+id/title_calender_content_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    android:background="@color/white"
+                    android:hint="请输入"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:textSize="@dimen/normalTextSize"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="进行地址"
+                    />
+
+                <EditText
+                    android:id="@+id/title_calender_address_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    android:background="@color/white"
+                    android:hint="请输入"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:textSize="@dimen/normalTextSize"
+                    />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_picker_height"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/timerpicker_start_rl"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white"
+                    android:padding="2dp">
+
+                    <com.jingchen.timerpicker.PickerView
+                        android:id="@+id/year_start_pv"
+                        android:layout_width="@dimen/activity_addmeeting_picker_weight"
+                        android:layout_height="@dimen/activity_addmeeting_picker_height"/>
+
+                    <TextView
+                        android:id="@+id/year_start_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@id/year_start_pv"
+                        android:text="年"
+                        android:textColor="@color/activity_text_grey"
+                        android:textSize="@dimen/normalTextSize"
+                        />
+
+                    <com.jingchen.timerpicker.PickerView
+                        android:id="@+id/month_start_pv"
+                        android:layout_width="@dimen/activity_addmeeting_picker_weight"
+                        android:layout_height="@dimen/activity_addmeeting_picker_height"
+                        android:layout_toRightOf="@id/year_start_tv"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/month_start_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/month_start_pv"
+                        android:text="月"
+                        android:textColor="@color/activity_text_grey"
+                        android:textSize="@dimen/normalTextSize"/>
+
+                    <com.jingchen.timerpicker.PickerView
+                        android:id="@+id/day_start_pv"
+                        android:layout_width="@dimen/activity_addmeeting_picker_weight"
+                        android:layout_height="@dimen/activity_addmeeting_picker_height"
+                        android:layout_toRightOf="@id/month_start_tv"/>
+
+                    <TextView
+                        android:id="@+id/day_start_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/day_start_pv"
+                        android:text="日"
+                        android:textColor="@color/activity_text_grey"
+                        android:textSize="@dimen/normalTextSize"/>
+
+                    <com.jingchen.timerpicker.PickerView
+                        android:id="@+id/hour_start_pv"
+                        android:layout_width="@dimen/activity_addmeeting_picker_weight"
+                        android:layout_height="@dimen/activity_addmeeting_picker_height"
+                        android:layout_toRightOf="@id/day_start_tv"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/hour_start_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/hour_start_pv"
+                        android:text="时"
+                        android:textColor="@color/activity_text_grey"
+                        android:textSize="@dimen/normalTextSize"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_picker_height"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="结束时间"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/timerpicker_end_rl"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white"
+                    android:padding="2dp">
+
+                    <com.jingchen.timerpicker.PickerView
+                        android:id="@+id/year_end_pv"
+                        android:layout_width="@dimen/activity_addmeeting_picker_weight"
+                        android:layout_height="@dimen/activity_addmeeting_picker_height"/>
+
+                    <TextView
+                        android:id="@+id/year_end_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@id/year_end_pv"
+                        android:text="年"
+                        android:textColor="@color/activity_text_grey"
+                        android:textSize="@dimen/normalTextSize"/>
+
+                    <com.jingchen.timerpicker.PickerView
+                        android:id="@+id/month_end_pv"
+                        android:layout_width="@dimen/activity_addmeeting_picker_weight"
+                        android:layout_height="@dimen/activity_addmeeting_picker_height"
+                        android:layout_toRightOf="@id/year_end_tv"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/month_end_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/month_end_pv"
+                        android:text="月"
+                        android:textColor="@color/activity_text_grey"
+                        android:textSize="@dimen/normalTextSize"/>
+
+                    <com.jingchen.timerpicker.PickerView
+                        android:id="@+id/day_end_pv"
+                        android:layout_width="@dimen/activity_addmeeting_picker_weight"
+                        android:layout_height="@dimen/activity_addmeeting_picker_height"
+                        android:layout_toRightOf="@id/month_end_tv"/>
+
+                    <TextView
+                        android:id="@+id/day_end_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/day_end_pv"
+                        android:text="日"
+                        android:textColor="@color/activity_text_grey"
+                        android:textSize="@dimen/normalTextSize"/>
+
+                    <com.jingchen.timerpicker.PickerView
+                        android:id="@+id/hour_end_pv"
+                        android:layout_width="@dimen/activity_addmeeting_picker_weight"
+                        android:layout_height="@dimen/activity_addmeeting_picker_height"
+                        android:layout_toRightOf="@id/day_end_tv"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/hour_end_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/hour_end_pv"
+                        android:text="时"
+                        android:textColor="@color/activity_text_grey"
+                        android:textSize="@dimen/normalTextSize"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                >
+
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="登录人"
+                    />
+
+                <TextView
+                    android:id="@+id/title_calender_constitutor_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addmeeting_height"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:text="某某"
+                    android:textSize="@dimen/normalTextSize"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addmeeting_height"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="是否全天"
+                    />
+                <com.dangelo.xxoa.togglebutton.ToggleButton
+                    android:id="@+id/isday_shock_switch"
+                    style="@style/SettingSwitchLayoutStyle"
+                    toggle:offBorderColor="@color/activity_text_grey"
+                    toggle:offColor="@color/activity_text_grey"
+                    toggle:onColor="@color/activity_title_bg"
+                    toggle:spotColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_addcalender_height"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:layout_width="@dimen/activity_addmeeting_text_wideth"
+                    android:layout_height="wrap_content"
+                    android:text="备注"
+                    />
+
+                <EditText
+                    android:id="@+id/title_calender_remark_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_addcalender_height"
+                    android:background="@color/white"
+                    android:hint="请输入"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:textSize="@dimen/normalTextSize"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/activity_topic_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:fitsSystemWindows="true"--><!--tools:context=".mvp.main.MainActivity"--><!--&gt;-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbarlayout"
+        layout="@layout/toolbar_new"/>
+
+    <com.dangelo.xxoa.ui.MyViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/toolbarlayout"
+        />
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/activity_bottom_bar_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/nav_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp">
+
+                <ImageButton
+                    android:id="@+id/icon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/home">
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon1"
+                    android:layout_centerHorizontal="true"
+                    android:text="首页"
+                    android:textColor="@color/activity_main_button_tv"
+                    android:textSize="@dimen/midsmallTextSize"
+                    android:layout_marginTop="@dimen/dp_3"
+                    >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nav_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp">
+
+                <ImageButton
+                    android:id="@+id/icon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/send"
+                    android:focusable="false">
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon2"
+                    android:layout_centerHorizontal="true"
+                    android:text="发文管理"
+                    android:textColor="@color/activity_main_button_tv"
+                    android:textSize="@dimen/midsmallTextSize"
+                    android:layout_marginTop="@dimen/dp_3"
+                    >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nav_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp">
+
+                <ImageButton
+                    android:id="@+id/icon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/receive"
+                    android:clickable="true"
+                    android:focusable="false">
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon3"
+                    android:layout_centerHorizontal="true"
+                    android:text="收文管理"
+                    android:textColor="@color/activity_main_button_tv"
+                    android:textSize="@dimen/midsmallTextSize"
+                    android:layout_marginTop="@dimen/dp_3"
+                    >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nav_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp">
+
+                <ImageButton
+                    android:id="@+id/icon4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/meet"
+                    android:focusable="false">
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon4"
+                    android:layout_centerHorizontal="true"
+                    android:text="会议通知"
+                    android:textColor="@color/activity_main_button_tv"
+                    android:textSize="@dimen/midsmallTextSize"
+                    android:layout_marginTop="@dimen/dp_3"
+                    >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nav_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp">
+
+                <ImageButton
+                    android:id="@+id/icon5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/know"
+                    android:focusable="false">
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/icon5"
+                    android:layout_centerHorizontal="true"
+                    android:text="知识库"
+                    android:textColor="@color/activity_main_button_tv"
+                    android:textSize="@dimen/midsmallTextSize"
+                    android:layout_marginTop="@dimen/dp_3"
+                    >
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+

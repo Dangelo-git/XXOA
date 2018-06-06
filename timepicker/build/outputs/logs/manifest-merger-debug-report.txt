@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:2:1-15:12
+INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:2:1-15:12
+	package
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:3:5-39
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml
+		INJECTED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml
+application
+ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:7:5-13:19
+	android:label
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:10:9-41
+	android:allowBackup
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /Users/dangelo/Documents/work/XXOA/XXOA/timepicker/src/main/AndroidManifest.xml:11:9-40

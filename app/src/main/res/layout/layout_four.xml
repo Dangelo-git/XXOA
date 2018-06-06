@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/schadule_calender_bgcolor" >
+
+    
+    <RelativeLayout
+        android:id="@+id/four_nolist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/schedule_nolist_bg"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/imgbtn1"
+            android:textSize="@dimen/bigbigTextSize"
+            android:textColor="@drawable/color_radiobutton"
+            android:checked="true"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/Document_type1"
+            android:paddingTop="@dimen/meet_second_title_padding"
+            android:paddingBottom="@dimen/meet_second_title_padding"
+            />
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/bigbigTextSize"
+            android:button="@null"
+            android:gravity="center"
+            android:id="@+id/imgbtn2"
+            android:textColor="@drawable/color_radiobutton"
+            android:text="@string/Document_type2"
+            android:paddingTop="@dimen/meet_second_title_padding"
+            android:paddingBottom="@dimen/meet_second_title_padding"/>
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/imgbtn3"
+            android:textSize="@dimen/bigbigTextSize"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/color_radiobutton"
+            android:text="@string/Document_type3"
+            android:paddingTop="@dimen/meet_second_title_padding"
+            android:paddingBottom="@dimen/meet_second_title_padding"/>
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/imgbtn4"
+            android:textSize="@dimen/bigbigTextSize"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/color_radiobutton"
+            android:text="@string/Document_type4"
+            android:paddingTop="@dimen/meet_second_title_padding"
+            android:paddingBottom="@dimen/meet_second_title_padding"/>
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/imgbtn5"
+            android:textSize="@dimen/bigbigTextSize"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/color_radiobutton"
+            android:text="@string/Document_type5"
+            android:paddingTop="@dimen/meet_second_title_padding"
+            android:paddingBottom="@dimen/meet_second_title_padding"/>
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/four_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_layout"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/schadule_calender_bgcolor"
+        android:dividerHeight="1.0px"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="true"
+        android:listSelector="#00000000" />
+
+</RelativeLayout>

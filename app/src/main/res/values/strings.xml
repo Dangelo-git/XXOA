@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">XXOA</string>
+    <string name="candler_start">开始时间</string>
+    <string name="candler_end">结束时间</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="Mon">一</string>
+    <string name="Tue">二</string>
+    <string name="Wed">三</string>
+    <string name="Thu">四</string>
+    <string name="Fri">五</string>
+    <string name="Sat">六</string>
+    <string name="Sun">日</string>
+
+    <string name="Document_type1">草稿</string>
+    <string name="Document_type2">代办</string>
+    <string name="Document_type3">已完成</string>
+    <string name="Document_type4">未完成</string>
+    <string name="Document_type5">停办</string>
+    <string name="Main_title_frist">首页</string>
+    <string name="Main_title_second">发文管理</string>
+    <string name="Main_title_third">收文管理</string>
+    <string name="Main_title_four">会议通知</string>
+    <string name="Main_title_five">知识库</string>
+    <string name="Side_title_clean">清除缓存</string>
+    <string name="Side_title_about">关于版本</string>
+    <string name="Side_title_Document">最新发文</string>
+    <string name="title_second_righttext">添加日程</string>
+    <string name="title_meet_righttext">添加会议</string>
+
+    <string name="phone_num">输入您的用户名</string>
+    <string name="phone_pwd">输入您的密码</string>
+    <string name="version">1.0</string>
+
+
+    <string name="addmeet_comperes">主持人</string>
+    <string name="addmeet_sites">会议室</string>
+    <string name="addmeet_typeCounts">会议类型次数</string>
+    <string name="addmeet_types">会议类型</string>
+    <string name="addmeet_deptList">部门@string/login_title_tv</string>
+    <string name="title_activity_activity_detail">ActivityDetail</string>
+    <string name="AK_AppId">xMTXC5pZqLwjHID72TeeQ5UxHbi7VZmI</string>
+    <string name="login_title_tv">湘西土家族苗族自治州</string>
+    <string name="login_frist_title_tv">交通运输局</string>
+    <string name="login_second_title_tv">综合办公业务管理平台</string>
+</resources>

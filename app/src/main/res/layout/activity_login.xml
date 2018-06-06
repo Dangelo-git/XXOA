@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:toggle="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:background="@drawable/login_bg"
+                android:fillViewport="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+    <include layout="@layout/toolbar_new"
+             android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/called_et_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_icon_margintop"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_title_tv"
+                android:textSize="@dimen/dp_28"
+                android:textColor="@color/activity_login_title_tv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_frist_title_tv"
+                android:textSize="@dimen/dp_28"
+                android:textColor="@color/activity_login_title_tv"/>
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_second_title_tv"
+                android:textSize="@dimen/dp_18"
+                android:textColor="@color/activity_login_title_tv"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/SettingItemLayoutStyle"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fgdia_contactbtn_marginleft"
+            android:layout_marginRight="@dimen/fgdia_contactbtn_marginleft"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/no_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_register_height"
+                android:background="@drawable/register_name_et_reck"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/login_name_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/login_name_icon"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"/>
+
+                <EditText
+                    android:id="@+id/called_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/login_name_icon"
+                    android:background="@null"
+                    android:hint="@string/phone_num"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sideblack"
+                    android:textColorHint="@color/activity_login_input_reck"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_register_height"
+                android:layout_marginTop="@dimen/activity_submit_margintop"
+                android:background="@drawable/register_name_et_reck"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/login_pwd_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/login_pwd_iocn"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"/>
+
+                <EditText
+                    android:id="@+id/called_pwd_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/login_pwd_icon"
+                    android:background="@null"
+                    android:hint="@string/phone_pwd"
+                    android:password="true"
+                    android:text=""
+                    android:textColor="@color/sideblack"
+                    android:textColorHint="@color/activity_login_input_reck"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/called_et_layout"
+        android:layout_marginLeft="@dimen/fgdia_contactbtn_marginleft"
+        android:layout_marginRight="@dimen/fgdia_contactbtn_marginleft"
+
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="自动登录"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/bigTextSize"
+            />
+
+        <com.dangelo.xxoa.togglebutton.ToggleButton
+            android:id="@+id/connect_shock_switch"
+            style="@style/SettingSwitchLayoutStyle"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            toggle:offBorderColor="@color/activity_text_grey"
+            toggle:offColor="@color/activity_text_grey"
+            toggle:onColor="@color/activity_login_toggle_on"
+            toggle:spotColor="@color/white"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/commit_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_submit_height"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/setting_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_register_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/fgdia_contactbtn_marginleft"
+            android:layout_marginRight="@dimen/fgdia_contactbtn_marginleft"
+            android:background="@drawable/login_out_bg"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normalTextSize"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

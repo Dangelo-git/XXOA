@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/framelist_sub_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp" >
+
+            <TextView
+                android:id="@+id/framelist_sub_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="foodname"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/waterfall_item_textcolor"
+                android:textSize="@dimen/dp_20" />
+
+            <TextView
+                android:id="@+id/framelist_sub_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/framelist_sub_item_name"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="framelist_sub_item_date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/waterfall_item_textcolor"
+                android:textSize="@dimen/dp_16" />
+
+            <TextView
+                android:id="@+id/framelist_sub_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/framelist_sub_item_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/framelist_sub_item_date"
+                android:singleLine="true"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/waterfall_item_textcolor" />
+
+            <LinearLayout
+                android:id="@+id/framelist_sub_item_img_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp" >
+
+                <ImageView
+                    android:id="@+id/framelist_sub_item_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                     />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/framelist_sub_item_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/framelist_sub_item_layout"
+            android:background="@color/schadule_calender_bgcolor"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

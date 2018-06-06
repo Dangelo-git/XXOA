@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dangelo.xxoa.ui.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+<RelativeLayout
+                android:id="@+id/sysmsg_item_root"
+                android:layout_width="match_parent"
+                android:minHeight="55dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <!--活动列表item布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginRight="@dimen/dp_12"
+        >
+
+        <ImageView
+            android:id="@+id/sysmsg_item_image_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sysmsg_laba"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_gravity="center"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/sysmsg_item_title_tx"
+            style="@style/MyTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginBottom="4dp"
+            android:gravity="start|center_vertical"
+            android:text="最新活动"
+            android:textSize="@dimen/middleTextSize"
+            android:textColor="@color/sysmsg_content_color"/>
+        <TextView
+            android:id="@+id/sysmsg_item_title_date"
+            style="@style/MyTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="2017-05-14"
+            android:textSize="@dimen/smallTextSize"
+            android:textColor="@color/normal_reset_reminder_text"/>
+</LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:src="@drawable/arrow_right"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@color/slide_menu_btn"
+        android:text="删除"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+</com.dangelo.xxoa.ui.SwipeMenuLayout>
